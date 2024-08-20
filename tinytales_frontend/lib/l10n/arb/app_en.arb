@@ -1,0 +1,273 @@
+{
+    "@@locale": "en",
+    "a11yCharacterEditHint": "Double-tap to edit character",
+    "@a11yCharacterEditHint": {
+        "description": "Hint for the open character edit page button"
+    },
+    "actionRetry": "Retry",
+    "a11yStoryDetails": "Double-tap to view story",
+    "loginError": "An error occurred or the login was canceled. Please try again.",
+    "logout": "Logout",
+    "logoutError": "An error occurred while logging out. Please try again.",
+    "appName": "Tinytales",
+    "appSubtitle": "Magic story creator ✨",
+    "appSlogan": "Where tales take flight",
+    "bottomNavHome": "Home",
+    "bottomNavHistory": "History",
+    "bottomNavCharacters": "Characters",
+    "bottomNavSettings": "Settings",
+    "continueWithGoogle": "Continue with Google",
+    "freeformPageTitle": "Free form",
+    "freeformPageSubtitle": "Create Your Own Story!",
+    "freeformPageDescription": "Unleash your imagination and create unique stories! In this section, you can craft your own tales, introducing your own ideas, characters, and plots. Let your creativity run wild!",
+    "freeformPageActionCreate": "Create a story",
+    "freeformPageInputHint": "Write your story here...",
+    "freeformPageInputLabel": "Content",
+    "historyPageTitle": "History",
+    "historyPageLoadingError": "An error occurred while loading the history. Please try again.",
+    "historyPageEmptyTitle": "No history yet",
+    "historyPageEmptyMessage": "It looks like you haven't created any stories yet. Start your first adventure now!",
+    "historyPagePageLoadMoreError": "An error occurred while loading more stories. Please try again.",
+    "historyPageEmptyAction": "Open creator",
+    "homePageTitle": "Tinytales",
+    "homePageOpenFreeformDescription": "or express yourself freely",
+    "homePageOpenFreeformCreator": "Open freeform",
+    "homePageOpenStoryCreatorDescription": "Create a story using a template",
+    "homePageOpenStoryCreator": "Open creator",
+    "loadMoreError": "Failed to load more items. Try again.",
+    "settingsPageTitle": "Settings",
+    "settingsPageAppVersion": "App version",
+    "storyCreatorTitle": "Story Creator",
+    "storyCreatorA11yLoading": "Loading. Please wait",
+    "storyCreatorExitDialogTitle": "Exit generator?",
+    "exit": "Exit",
+    "storyCreatorExitDialogDescription": "Your story progress will not be saved",
+    "storyCreatorActionNext": "Next",
+    "storyCreatorActionCreate": "Create a story",
+    "storyCreatorActionBack": "Go back",
+    "aiAutofill": "AI autofill",
+    "a11yAiAutofillResult": "Generating input by AI wait for result",
+    "a11yStepProgressBarLabel": "Step {currentStep} of {stepCount}",
+    "@a11yStepProgressBarLabel": {
+        "placeholders": {
+            "currentStep": {
+                "type": "int"
+            },
+            "stepCount": {
+                "type": "int"
+            }
+        }
+    },
+    "a11yCharacterInputAutofix": "Autofix changed character name to {name} and description to {description}",
+    "@a11yCharacterInputAutofix": {
+        "placeholders": {
+            "name": {
+                "type": "String"
+            },
+            "description": {
+                "type": "String"
+            }
+        }
+    },
+    "a11yMoralInputAutofix": "Autofix changed moral {moral}",
+    "@a11yMoralInputAutofix": {
+        "placeholders": {
+            "moral": {
+                "type": "String"
+            }
+        }
+    },
+    "storyCreatorActionAutofill": "AI autofill",
+    "storyCreatorOptionalLabel": "Optional",
+    "storyCreatorLengthStepQuestion": "How long do you want your story to be?",
+    "storyCreatorLengthStepShort": "Short",
+    "storyCreatorLengthStepShortDescription": "Reading time: 1-2 minutes. Perfect for kids under 3 years old.",
+    "storyCreatorLengthStepMedium": "Medium",
+    "storyCreatorLengthStepMediumDescription": "Reading time: 3-4 minutes. Perfect for children between 3 and 5 years old.",
+    "storyCreatorLengthStepLong": "Long",
+    "storyCreatorLengthStepLongDescription": "Reading time: 5-7 minutes. Perfect for children over 5 years of age.",
+    "storyCreatorMoralStepTitle": "What will be the moral/lesson of the story?",
+    "storyCreatorMoralStepSubTitle": "Choose from our moral suggestions (max 3)\nor write your own moral ",
+    "storyCreatorMoralStepOwnMoralButton": "Write your own moral",
+    "storyCreatorMoralStepSuggestionsLabel": "Suggestions:",
+    "storCreatorMoralSuggestionsA11yLabel": "{name} suggestion, {selectedSuggestions} of {selectedSuggestionsMax} suggestions selected",
+    "@storCreatorMoralSuggestionsA11yLabel": {
+        "placeholders": {
+            "name": {
+                "type": "String"
+            },
+            "selectedSuggestions": {
+                "type": "int"
+            },
+            "selectedSuggestionsMax": {
+                "type": "int"
+            }
+        }
+    },
+    "storCreatorMoralSuggestionsA11yLabelSelected": "{name} suggestion, selected, {selectedSuggestions} of {selectedSuggestionsMax} suggestions selected",
+    "@storCreatorMoralSuggestionsA11yLabelSelected": {
+        "placeholders": {
+            "name": {
+                "type": "String"
+            },
+            "selectedSuggestions": {
+                "type": "int"
+            },
+            "selectedSuggestionsMax": {
+                "type": "int"
+            }
+        }
+    },
+    "storyCreatorMoralStepSuggestionsList": "Friendship matters;Be brave;Kindness counts;Honesty wins;Help others;Stay curious;Respect nature;Work together;Stay positive;Dream big",
+    "@storyCreatorMoralStepSuggestionsList": {
+        "description": "List of moral/lesson suggestions for the story creator semicolon separated"
+    },
+    "storyCreatorMoralStepInputLabel": "Moral",
+    "storyCreatorMoralStepInputHint": "e.g. Respect others’ differences",
+    "storyCreatorMoralStepError": "The input contains inappropriate content. Please enter suitable text.",
+    "a11yMoralAiAutofillResult": "Generated moral {content}",
+    "@a11yMoralAiAutofillResult": {
+        "placeholders": {
+            "content": {
+                "type": "String"
+            }
+        }
+    },
+    "storyCreatorSelectCharacterStepTitle": "Who will be the main character of the story?",
+    "storyCreatorSelectCharacterStepCreateCharacterButton": "Create a new character",
+    "storyCreatorSelectCharacterStepCharactersLoadingError": "We have a problem loading your characters. Please try again.",
+    "storyCreatorCustomCharacterStepTitle": "What features will your character have?",
+    "characterNameInputLabel": "Name",
+    "characterNameInputHint": "e.g. Bob",
+    "characterDescriptionInputLabel": "Character description",
+    "characterDescriptionInputHint": "e.g. Bob is a brave knight",
+    "characterInputsError": "One of the inputs contains inappropriate content.\nPlease enter suitable text.",
+    "a11yCharacterValidationInappropriate": "Character validation error {message}",
+    "@a11yCharacterValidationInappropriate": {
+        "placeholders": {
+            "message": {
+                "type": "String"
+            }
+        }
+    },
+    "a11yCharacterValidationNeedsImprovement": "Character validation warning {message}",
+    "@a11yCharacterValidationNeedsImprovement": {
+        "placeholders": {
+            "message": {
+                "type": "String"
+            }
+        }
+    },
+    "a11yMoralValidationInappropriate": "Moral validation error {message}",
+    "@a11yMoralValidationInappropriate": {
+        "placeholders": {
+            "message": {
+                "type": "String"
+            }
+        }
+    },
+    "a11yMoralValidationNeedsImprovement": "Moral validation warning {message}",
+    "@a11yMoralValidationNeedsImprovement": {
+        "placeholders": {
+            "message": {
+                "type": "String"
+            }
+        }
+    },
+    "storyCreatorCustomCharacterStepSaveActionLabel": "Save character to library",
+    "a11yCharacterAiAutofillResult": "Generated character name and description {name} {description}",
+    "@a11yCharacterAiAutofillResult": {
+        "placeholders": {
+            "name": {
+                "type": "String"
+            },
+            "description": {
+                "type": "String"
+            }
+        }
+    },
+    "storyCreatorTalesOverviewStepQuestion": "Which story summary do you like best?",
+    "storyPageTitle": "Your story",
+    "storyPageActionSave": "Save changes",
+    "cancel": "Cancel",
+    "storyPageFontSizeDialogTitle": "Font size",
+    "storyPageFontSizeDialogDescription": "Choose the font size for your stories. You can edit it at any time.",
+    "storyPageFontSizeSmall": "Small",
+    "storyPageFontSizeSmallA11y": "Small font size",
+    "storyPageFontSizeRegular": "Regular",
+    "storyPageFontSizeRegularA11y": "Regular font size",
+    "storyPageFontSizeLarge": "Large",
+    "storyPageFontSizeLargeA11y": "Large font size",
+    "storyPageFailedToDownloadPdf": "Failed to download the PDF. Please try again.",
+    "storyPageFailedToGeneratePdf": "Failed to generate the PDF. Please try again.",
+    "storyPageShareButton": "Share story",
+    "storyPageChangeFontSizeButton": "Change font size",
+    "storyPageGenerateAudioButton": "Generate audio",
+    "storyPageOpenPlayerButton": "Open audio player and listen to story",
+    "storyPageClosePlayerButton": "Close story audio player",
+    "storyPageGeneratingAudioDescription": "Generating audio. You'll be notified when it's done.",
+    "storyPageGeneratedAudioDescription": "Audio generated successfully. You can listen to it now.",
+    "storyPageAudioError": "An error occurred while opening audio. Please try again.",
+    "storyPageOpenPdfButton": "Open PDF",
+    "storyPageGeneratingPdfDescription": "Generating PDF. Please wait.",
+    "storyPageDeleteButton": "Delete story",
+    "storyPageEditButton": "Edit story",
+    "storyPageExitEditModeButton": "Exit edit mode",
+    "storyPageFailedToGenerateNextAdventure": "Failed to generate the next adventure. Please try again.",
+    "genericErrorTitle": "Something went wrong...",
+    "genericErrorDescription": "It looks like our magical storybook is taking a little break. Please check your connection and try again.",
+    "tryAgain": "Try again",
+    "goBack": "Go back",
+    "charactersPageTitle": "Characters",
+    "charactersPageEmptyTitle": "No characters yet",
+    "charactersPageEmptyMessage": "It looks like you haven't created any characters yet. Bring your first hero to life!",
+    "editCharacterPageTitle": "Edit character",
+    "editCharacterPageSaveButton": "Save changes",
+    "autofixText": "Autofix text",
+    "emptyInputError": "Both fields are required",
+    "confirm": "Yes",
+    "deleteCharacterConfirmation": "Are you sure you want to delete the character?",
+    "deleteStoryConfirmation": "Are you sure you want to delete the story?",
+    "editCharacterPageDeleteButton": "Delete character",
+    "deletedStoryHeader": "This story no longer exist",
+    "deletedStoryDescription": "Someone probably deleted this story.\nMaybe it's time to create a new one?",
+    "goBackToHomepage": "Go back to homepage",
+    "createNextAdventure": "Create next adventure",
+    "nextAdventureProposalHeader": "Which story would you like next?",
+    "regenerate": "Regenerate",
+    "regeneratePicture": "Regenerate picture",
+    "storyCreatingLoaderList": "Creating a magical story...;Sprinkling AI fairy dust...;Gathering characters...;Choosing the plot...;Designing vivid scenes...;Adding humor and fun...;Weaving in lessons...;Sparking curiosity...;Fine-tuning the story...;Polishing the narrative...;Adding final touches...",
+    "@storyCreatingLoaderList": {
+        "description": "List of messages displayed during story creation separated by semicolon"
+    },
+    "createYourCharacter": "Create your character",
+    "createCharacter": "Create character",
+    "save": "Save",
+    "loading": "Loading. Please wait.",
+    "play": "Play",
+    "pause": "Pause",
+    "goBack10Seconds": "Go back 10 seconds",
+    "audioPlayerStatus": "Audio player, {playingStatus}, current position {minutes} minutes {seconds} seconds",
+    "@audioPlayerStatus": {
+        "description": "Audio player status message for a11y",
+        "placeholders": {
+            "playingStatus": {
+                "type": "String"
+            },
+            "minutes": {
+                "type": "int"
+            },
+            "seconds": {
+                "type": "int"
+            }
+        }
+    },
+    "audioPlayerPlaying": "playing",
+    "audioPlayerPaused": "paused",
+    "theme": "Theme",
+    "chooseTheme": "Choose theme",
+    "systemDefault": "System default",
+    "lightTheme": "Light mode",
+    "darkTheme": "Dark mode",
+    "ok": "OK"
+}

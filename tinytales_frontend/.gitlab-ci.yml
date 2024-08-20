@@ -1,0 +1,80 @@
+image: instrumentisto/flutter:3.22.1
+
+stages:
+  - lint
+  - test
+
+### Merge request related jobs ###
+
+check_code_format:
+  stage: lint
+  script:
+    - dart format --set-exit-if-changed --output=none .
+  rules:
+    - if: $CI_PIPELINE_SOURCE == 'merge_request_event'
+
+analysis:
+  stage: lint
+  script:
+    - flutter analyze
+  rules:
+    - if: $CI_PIPELINE_SOURCE == 'merge_request_event'
+
+custom_lint:
+  stage: lint
+  script:
+    - dart run custom_lint
+  rules:
+    - if: $CI_PIPELINE_SOURCE == 'merge_request_event'
+
+# run all tests and update goldens only when the golden tests have changed
+update_goldens:
+  stage: test
+  before_script:
+    - git config user.name "GitLab CI"
+    - git config user.email "gitlab-ci-bot@$CI_SERVER_HOST"
+    - git remote remove golden_origin || true
+    - git branch -D update-goldens || true
+    - git remote add golden_origin https://gitlab-golden-bot:$PUSH_ACCESS_TOKEN@$CI_SERVER_HOST/$CI_PROJECT_PATH.git
+    - git fetch golden_origin
+    - git checkout -b update-goldens golden_origin/$CI_MERGE_REQUEST_SOURCE_BRANCH_NAME
+  script:
+    - flutter test --update-goldens --dart-define=CI=${CI:-false}
+  after_script:
+    - >
+      if [ "$CI_JOB_STATUS" != "success" ]; then
+        echo "Job failed, not updating golden files"
+        exit 0;
+      else
+        echo "Job passed, updating golden files"
+      fi
+    - git add test/golden/preview/
+    - git commit -m "[skip ci] Update golden files"
+    - git push golden_origin update-goldens:$CI_MERGE_REQUEST_SOURCE_BRANCH_NAME
+  rules:
+    - if: $CI_PIPELINE_SOURCE == 'merge_request_event'
+      changes:
+        - "test/golden/**"
+        - "test/golden/preview/**"
+  artifacts:
+    paths:
+      - test/golden/preview/*
+
+# run all tests only when the golden tests have not changed
+flutter_test:
+  stage: test
+  script:
+    - flutter test --dart-define=CI=${CI:-false}
+  rules:
+    - if: $CI_PIPELINE_SOURCE == 'merge_request_event'
+      changes:
+        - "test/golden/**"
+        - "test/golden/preview/**"
+      when: never
+    - if: $CI_PIPELINE_SOURCE == 'merge_request_event'
+  artifacts:
+    when: on_failure
+    paths:
+      - test/golden/failures/*
+
+### END: Merge request related jobs ###
